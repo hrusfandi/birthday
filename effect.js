@@ -24,7 +24,7 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
 	});
@@ -39,14 +39,14 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
 		});
 	});
@@ -119,14 +119,14 @@ $('document').ready(function(){
 		loopSix();
 		loopSeven();
 		
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#cake_fadein').fadeIn('slow');
 		});
 	});	
 
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#light_candle').fadeIn('slow');
 		});
 	});
@@ -143,6 +143,7 @@ $('document').ready(function(){
 		 vw = $(window).width()/2;
 
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
+		$('#b1,#b2,#b6,#b7').hide();
 		$('#b1').attr('id','b11');
 		$('#b2').attr('id','b22')
 		$('#b3').attr('id','b33')
@@ -159,7 +160,7 @@ $('document').ready(function(){
 		$('#b77').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#story').fadeIn('slow');
 		});
 	});
