@@ -250,7 +250,34 @@ const animationTimeline = () => {
         },
         0.3
     )
-    .to(".six", 0.5, {
+    .to("#six-0", 0.5, {
+        opacity: 0,
+        y: 30,
+        zIndex: "-1",
+    })
+    .staggerFromTo(
+        ".baloons img",
+        2.5, {
+            opacity: 0.9,
+            y: 1400,
+        }, {
+            opacity: 1,
+            y: -1000,
+        },
+        0.2
+    )
+    .from(
+        ".words-picture-1",
+        0.5, {
+            scale: 3.5,
+            opacity: 0,
+            x: 25,
+            y: -25,
+            rotationZ: -45,
+        },
+        "-=2"
+    )
+    .to("#six-1", 0.5, {
         opacity: 0,
         y: 30,
         zIndex: "-1",
